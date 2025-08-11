@@ -1,6 +1,8 @@
 # Modular RAG Chatbot
 
-A production-ready, modular Retrieval-Augmented Generation (RAG) chatbot framework with advanced query enhancement techniques including Query Expansion, HyDE, HyQE, and Named Entity Recognition.
+A production-ready, modular Retrieval-Augmented Generation (RAG) chatbot framework with advanced query enhancement techniques including Query Expansion, HyDE, HyQE, and Named Entity Recognition. 
+
+The current implementation is tested and demonstrated using a Python FAQ dataset, showcasing the framework's effectiveness for technical documentation and Q&A applications.
 
 ## Features
 
@@ -141,7 +143,7 @@ pytest tests/test_integration.py -v
 pytest --cov=src --cov-report=html
 ```
 
-## � Extending the Framework
+## Extending the Framework
 
 ### Adding New Modules
 1. Create module directory: `src/your_module/`
@@ -160,7 +162,7 @@ The framework can be adapted for different domains by:
 - Configuring NER for domain-specific entities
 - Training custom embedding models
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 | Issue | Solution |
 |-------|----------|
@@ -170,7 +172,7 @@ The framework can be adapted for different domains by:
 | `Port already in use` | Change port: `streamlit run src/app.py --server.port 8502` |
 | Memory issues | Reduce `DEFAULT_N_RESULTS` and disable modules |
 
-## 📈 Performance
+## Performance
 
 - **Query Expansion**: 20-35% improvement in retrieval coverage
 - **HyDE**: 15-30% improvement in retrieval accuracy  
