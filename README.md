@@ -143,19 +143,8 @@ pytest tests/test_integration.py -v
 pytest --cov=src --cov-report=html
 ```
 
-## Extending the Framework
+## Domain Adaptation
 
-### Adding New Modules
-1. Create module directory: `src/your_module/`
-2. Implement processor class following existing patterns
-3. Add configuration options
-4. Integrate with RAG engine
-5. Add UI controls
-6. Write tests
-
-See `docs/ARCHITECTURE.md` for detailed guidelines.
-
-### Domain Adaptation
 The framework can be adapted for different domains by:
 - Updating domain-specific terminology in query expansion
 - Customizing HyDE prompts for your domain
